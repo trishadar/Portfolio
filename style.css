@@ -1,3 +1,11 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card-bg: #ffffff;
+  --border: #ffffff;
+  --accent: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +14,8 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -16,8 +24,8 @@ body {
 nav {
   position: sticky;
   top: 0;
-  background: white;
-  border-bottom: 1px solid #ddd;
+  background: var(--bg);
+  border-bottom: 1px solid var(--bg);
   z-index: 100;
 }
 
@@ -27,31 +35,33 @@ nav {
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
+  margin-left: auto;
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: var(--text);
   font-weight: 500;
 }
 
 .logo {
   font-weight: 700;
-  color: #4A90E2;
+  color: black;
 }
 
 /* Hero */
 header {
   padding: 120px 20px;
   text-align: center;
-  background: linear-gradient(135deg, #4A90E2, #50E3C2);
-  color: white;
+  background: var(--text);
+  color: var(--bg);
 }
 
 header h1 {
@@ -64,8 +74,8 @@ header p {
 }
 
 .btn {
-  background: white;
-  color: #4A90E2;
+  background: var(--bg);
+  color: var(--text);
   padding: 14px 32px;
   border-radius: 30px;
   text-decoration: none;
@@ -84,7 +94,7 @@ section {
 
 h2 {
   font-size: 2rem;
-  border-bottom: 3px solid #4A90E2;
+  border-bottom: 3px solid var(--text);
   display: inline-block;
   margin-bottom: 30px;
 }
@@ -101,14 +111,14 @@ h2 {
 
 .project-info h3 {
   font-size: 1.7rem;
-  color: #4A90E2;
+  color: var(--text);
 }
 
 .demo-btn {
   display: inline-block;
   margin-top: 10px;
   font-weight: 600;
-  color: #4A90E2;
+  color: var(--text);
 }
 
 /* BIG IFRAME */
@@ -123,14 +133,14 @@ h2 {
 /* Alternating background */
 .project-section.alt {
   padding: 60px 30px;
-  background: #ffffff;
+  background: var(--bg);
   border-radius: 20px;
 }
 
 /* Footer */
 footer {
-  background: #333;
-  color: white;
+  background: var(--text);
+  color: var(--bg);
   text-align: center;
   padding: 20px;
 }
@@ -144,4 +154,39 @@ footer {
   header h1 {
     font-size: 2.3rem;
   }
+}
+
+#theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  margin-left: 15px;
+}
+
+#theme-toggle:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+#theme-toggle .icon {
+  color: var(--text);
+  font-size: 1.5rem;
+}
+
+#theme-toggle:hover .icon {
+  color: var(--bg);
+  font-size: 1.5rem;
+}
+
+body.dark {
+  --bg: #000000;
+  --text: #ffffff;
+  --card-bg: #000000;
+  --border: #000000;
+  --accent: #ffffff;
 }
