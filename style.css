@@ -145,6 +145,13 @@ h2 {
   color: var(--text);
 }
 
+.project-tech {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
 .project-info p {
   font-size: 1rem;
   color: #818181;
@@ -212,4 +219,23 @@ body.dark {
   --card-bg: #111111;
   --border: #444;
   --accent: #ffffff;
+}
+
+.demo-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  border: 1.5px solid var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.demo-btn:hover {
+  background: var(--text);
+  color: var(--bg);
+  transform: translateY(-1px);
 }
