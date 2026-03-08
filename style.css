@@ -66,6 +66,7 @@ header {
   flex-direction: column;
   align-items: center;
   font-family: 'Cormorant Garamond', serif;
+  gap: 16px;
 }
 
 header h1 {
