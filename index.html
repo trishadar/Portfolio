@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trisha Darure | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -24,7 +23,7 @@
       </ul>
       <button id="theme-toggle" aria-label="Toggle dark mode">
         <span class="icon">☾</span>
-        </button>
+      </button>
     </div>
   </nav>
 
@@ -40,8 +39,8 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I’m a student developer pursuing a BS in Computer Science at the University of Texas at Austin, 
-        with a passion for building interactive web apps, games, and AI-powered projects focused on 
+        I’m a student developer pursuing a BS in Computer Science at the University of Texas at Austin,
+        with a passion for building interactive web apps, games, and AI-powered projects focused on
         creativity, usability, and clean design.
       </p>
     </div>
@@ -50,224 +49,158 @@
   <!-- Projects -->
   <section id="projects">
 
-  <h2 class="project-section-title">Technical Projects</h2>
-  <div class="projects-grid">
+    <h2 class="project-section-title">Technical Projects</h2>
     <div class="project-card">
-    <iframe src="https://cf-ai-internet-wrapped.pages.dev/" class="project-live"></iframe>
-    <div class="project-info">
-      <h3>Internet Wrapped</h3>
-      <p>AI-powered Internet traffic trends by country, delivered in a chatbot experience.</p>
-      <p class="project-tech">Cloudflare Workers • Cloudflare Pages • Cloudflare Radar API • Workers AI • Durable Objects • TypeScript • Wrangler CLI • HTML • CSS • JavaScript</p>
-    <a class="demo-btn" href="https://cf-ai-internet-wrapped.pages.dev/" target="_blank">
+      <iframe src="https://sports-oracle-pied.vercel.app/" class="project-live"></iframe>
+      <div class="project-info">
+        <h3>Sports Oracle</h3>
+        <p>AI-powered sports betting intelligence agent that analyzes live injury reports, line movement, sharp money
+          indicators, and breaking news to generate real-time bet signals.</p>
+        <p class="project-tech">Claude AI • React • Node.js • Clerk Auth • Fly.io • Vercel • Tailwind CSS</p>
+        <a class="demo-btn" href="https://sports-oracle-pied.vercel.app/" target="_blank">
           Open Live Demo →
         </a>
+      </div>
+      <a href="https://github.com/trishadar/sports-oracle" target="_blank" class="github-btn"
+        aria-label="View GitHub repository">
+        <i class="fab fa-github"></i>
+      </a>
     </div>
-     <a
-      href="https://github.com/trishadar/cf_ai_internet_wrapped"
-      target="_blank"
-      class="github-btn"
-      aria-label="View GitHub repository"
-    >
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
 
-    <div class="project-card">
-    <iframe src="https://trishadar.github.io/stock-sentiment-predictor/" class="project-live"></iframe>
-    <div class="project-info">
-      <h3>Stock Sentiment Predictor</h3>
-      <p>Predict stock sentiment from news headlines and get Buy/Hold/Sell suggestions.</p>
-      <p class="project-tech">Python • Flask • NewsAPI • VADER Sentiment • Requests • Flask-CORS • HTML • CSS • JavaScript</p>
-    <a class="demo-btn" href="https://trishadar.github.io/stock-sentiment-predictor/" target="_blank">
-          Open Live Demo →
-        </a>
-    </div>
-     <a
-      href="https://github.com/trishadar/stock-sentiment-predictor"
-      target="_blank"
-      class="github-btn"
-      aria-label="View GitHub repository"
-    >
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-
-    <div class="project-card">
-    <video class="project-video" autoplay muted loop playsinline>
-    <source src="videos/GoEdgeProxyDemo.mov" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-    <div class="project-info">
-      <h3>Go Edge Proxy</h3>
-      <p>A high-performance reverse proxy that supports multiple backend servers with round-robin load balancing, per-IP rate limiting, request logging, real-time metrics, and graceful shutdown.</p>
-      <p class="project-tech">Go</p>
-    </div>
-     <a
-      href="https://github.com/trishadar/go-edge-proxy"
-      target="_blank"
-      class="github-btn"
-      aria-label="View GitHub repository"
-    >
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-
-  </div>
-
-  <h2 class="project-section-title">Creative Web Experiments</h2>
-  <div class="projects-grid">
-
-  <div class="project-card">
-   <video class="project-video" autoplay muted loop playsinline>
-    <source src="videos/TabiDemo.mov" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-    <div class="project-info">
-      <h3>Tabi Extension</h3>
-      <p>A cute browser-based Tamagotchi named Tabi where you feed, play, and care for your virtual pet in real-time.</p>
-      <p class="project-tech">HTML • CSS • JavaScript</p>
-    <a class="demo-btn" href="https://chromewebstore.google.com/detail/tabi/fmlbdfojemkmbahggjkhbmckbbchodpl?authuser=0&hl=en" target="_blank">
-          Install →
-        </a>
-    </div>
-     <a
-      href="https://github.com/trishadar/Tabi"
-      target="_blank"
-      class="github-btn"
-      aria-label="View GitHub repository"
-    >
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-
-  <div class="project-card">
-    <iframe src="https://trishadar.github.io/TheCardsKnow/" class="project-live"></iframe>
-    <div class="project-info">
-      <h3>The Cards Know</h3>
-      <p>A mind-reading web game inspired by Peter Answers—ask carefully!</p>
-      <p class="project-tech">HTML • CSS • JavaScript</p>
-    <a class="demo-btn" href="https://trishadar.github.io/TheCardsKnow/" target="_blank">
-          Open Live Demo →
-        </a>
-    </div>
-     <a
-      href="https://github.com/trishadar/TheCardsKnow"
-      target="_blank"
-      class="github-btn"
-      aria-label="View GitHub repository"
-    >
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-
-  <div class="project-card">
-    <iframe src="https://trishadar.github.io/MemoryMap/" class="project-live"></iframe>
-    <div class="project-info">
-      <h3>Memory Map</h3>
-      <p>Map for my mom to add photos; a fun way to relive our memories.</p>
-      <p class="project-tech">Leaflet.js • Firebase Authentication • Firebase Firestore • OpenStreetMap • Nominatim API • HTML • CSS • JavaScript</p>
-    <a class="demo-btn" href="https://trishadar.github.io/MemoryMap/" target="_blank">
-          Open Live Demo →
-        </a>
-    </div>
-     <a
-      href="https://github.com/trishadar/MemoryMap"
-      target="_blank"
-      class="github-btn"
-      aria-label="View GitHub repository"
-    >
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-
-  <div class="project-card">
-    <iframe src="https://trishadar.github.io/WhyAreYouStillHere/" class="project-live"></iframe>
-    <div class="project-info">
-      <h3>Why Are You Still Here</h3>
-      <p>A cheeky, judgemental website that comments on how long you linger.</p>
-      <p class="project-tech">HTML • CSS • JavaScript</p>
-    <a class="demo-btn" href="https://trishadar.github.io/WhyAreYouStillHere/" target="_blank">
-          Open Live Demo →
-        </a>
-    </div>
-     <a
-      href="https://github.com/trishadar/WhyAreYouStillHere"
-      target="_blank"
-      class="github-btn"
-      aria-label="View GitHub repository"
-    >
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-
-</div>
-
-<h2 class="project-section-title">Playable Games</h2>
     <div class="projects-grid">
-  <div class="project-card">
-    <video class="project-video" autoplay muted loop playsinline>
-    <source src="videos/BasketballDemo.mov" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-    <div class="project-info">
-      <h3>Basketball Stars Parody</h3>
-      <p>A 2D basketball game where you compete against friends. Download and play.</p>
-      <p class="project-tech">Godot 4.4.1 • GDScript</p>
-    </div>
-    <div class="download-buttons">
-      <a href="downloads/BasketballStarsWindows.zip" class="btn">Windows</a>
-      <a href="downloads/BasketballStarsMac.zip" class="btn">Mac</a>
-      <a href="downloads/BasketballStarsLinux.zip" class="btn">Linux</a>
-    </div>
-    <a
-      href="https://github.com/trishadar/BasketballStars"
-      target="_blank"
-      class="github-btn"
-      aria-label="View GitHub repository"
-    >
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
+      <div class="project-card">
+        <iframe src="https://cf-ai-internet-wrapped.pages.dev/" class="project-live"></iframe>
+        <div class="project-info">
+          <h3>Internet Wrapped</h3>
+          <p>AI-powered Internet traffic trends by country, delivered in a chatbot experience.</p>
+          <p class="project-tech">Cloudflare Workers • Cloudflare Pages • Cloudflare Radar API • Workers AI • Durable
+            Objects • TypeScript • Wrangler CLI • HTML • CSS • JavaScript</p>
+          <a class="demo-btn" href="https://cf-ai-internet-wrapped.pages.dev/" target="_blank">
+            Open Live Demo →
+          </a>
+        </div>
+        <a href="https://github.com/trishadar/cf_ai_internet_wrapped" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
 
-  <div class="project-card">
-    <video class="project-video" autoplay muted loop playsinline>
-    <source src="videos/PapasRotiriaDemo.mov" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-    <div class="project-info">
-      <h3>Papa's Rotiria</h3>
-      <p>Make roti orders for hungry customers in this fun parody of Papa’s Pizzeria. Download and play.</p>
-      <p class="project-tech">Godot 4.4.1 • GDScript</p>
-    </div>
-    <div class="download-buttons">
-      <a href="downloads/PapasRotiriaWindows.zip" class="btn">Windows</a>
-      <a href="downloads/PapasRotiriaMac.zip" class="btn">Mac</a>
-      <a href="downloads/PapasRotiriaLinux.zip" class="btn">Linux</a>
-    </div>
-     <a
-      href="https://github.com/trishadar/PapasRotiria"
-      target="_blank"
-      class="github-btn"
-      aria-label="View GitHub repository"
-    >
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-</div>
+      <div class="project-card">
+        <iframe src="https://trishadar.github.io/stock-sentiment-predictor/" class="project-live"></iframe>
+        <div class="project-info">
+          <h3>Stock Sentiment Predictor</h3>
+          <p>Predict stock sentiment from news headlines and get Buy/Hold/Sell suggestions.</p>
+          <p class="project-tech">Python • Flask • NewsAPI • VADER Sentiment • Requests • Flask-CORS • HTML • CSS •
+            JavaScript</p>
+          <a class="demo-btn" href="https://trishadar.github.io/stock-sentiment-predictor/" target="_blank">
+            Open Live Demo →
+          </a>
+        </div>
+        <a href="https://github.com/trishadar/stock-sentiment-predictor" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:tpd568@my.utexas.edu">tpd568@my.utexas.edu</a></p>
-      <p>GitHub: <a href="https://github.com/trishadar" target="_blank">
-        https://github.com/trishadar</a></p>
     </div>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 Trisha Darure</p>
-  </footer>
-  <script src="script.js"></script>
+    <h2 class="project-section-title">Creative Web Experiments</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <iframe src="https://trishadar.github.io/TheCardsKnow/" class="project-live"></iframe>
+        <div class="project-info">
+          <h3>The Cards Know</h3>
+          <p>A mind-reading web game inspired by Peter Answers—ask carefully!</p>
+          <p class="project-tech">HTML • CSS • JavaScript</p>
+          <a class="demo-btn" href="https://trishadar.github.io/TheCardsKnow/" target="_blank">
+            Open Live Demo →
+          </a>
+        </div>
+        <a href="https://github.com/trishadar/TheCardsKnow" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <iframe src="https://trishadar.github.io/MemoryMap/" class="project-live"></iframe>
+        <div class="project-info">
+          <h3>Memory Map</h3>
+          <p>Map for my mom to add photos; a fun way to relive our memories.</p>
+          <p class="project-tech">Leaflet.js • Firebase Authentication • Firebase Firestore • OpenStreetMap • Nominatim
+            API • HTML • CSS • JavaScript</p>
+          <a class="demo-btn" href="https://trishadar.github.io/MemoryMap/" target="_blank">
+            Open Live Demo →
+          </a>
+        </div>
+        <a href="https://github.com/trishadar/MemoryMap" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <h2 class="project-section-title">Playable Games</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <video class="project-video" autoplay muted loop playsinline>
+          <source src="videos/BasketballDemo.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="project-info">
+          <h3>Basketball Stars Parody</h3>
+          <p>A 2D basketball game where you compete against friends. Download and play.</p>
+          <p class="project-tech">Godot 4.4.1 • GDScript</p>
+        </div>
+        <div class="download-buttons">
+          <a href="downloads/BasketballStarsWindows.zip" class="btn">Windows</a>
+          <a href="downloads/BasketballStarsMac.zip" class="btn">Mac</a>
+          <a href="downloads/BasketballStarsLinux.zip" class="btn">Linux</a>
+        </div>
+        <a href="https://github.com/trishadar/BasketballStars" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <video class="project-video" autoplay muted loop playsinline>
+          <source src="videos/PapasRotiriaDemo.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="project-info">
+          <h3>Papa's Rotiria</h3>
+          <p>Make roti orders for hungry customers in this fun parody of Papa’s Pizzeria. Download and play.</p>
+          <p class="project-tech">Godot 4.4.1 • GDScript</p>
+        </div>
+        <div class="download-buttons">
+          <a href="downloads/PapasRotiriaWindows.zip" class="btn">Windows</a>
+          <a href="downloads/PapasRotiriaMac.zip" class="btn">Mac</a>
+          <a href="downloads/PapasRotiriaLinux.zip" class="btn">Linux</a>
+        </div>
+        <a href="https://github.com/trishadar/PapasRotiria" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:tpd568@my.utexas.edu">tpd568@my.utexas.edu</a></p>
+        <p>GitHub: <a href="https://github.com/trishadar" target="_blank">
+            https://github.com/trishadar</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Trisha Darure</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
