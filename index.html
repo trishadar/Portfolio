@@ -4,342 +4,203 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trisha Darure — Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <title>Trisha Darure | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
 
-  <!-- Cursor -->
-  <div class="cursor-dot"></div>
-  <div class="cursor-ring"></div>
-
-  <!-- Noise overlay -->
-  <div class="noise"></div>
-
-  <!-- NAV -->
-  <nav id="nav">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">TD<span class="pink">.</span></a>
-      <ul class="nav-links">
-        <li><a href="#about" data-label="01">About</a></li>
-        <li><a href="#projects" data-label="02">Projects</a></li>
-        <li><a href="#contact" data-label="03">Contact</a></li>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <a href="#hero" class="logo">Trisha Darure</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="nav-status">
-        <span class="status-dot"></span>
-        <span>Available for opportunities</span>
-      </div>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon">☾</span>
+      </button>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-bg-text">TRISHA</div>
-    <div class="hero-content">
-      <div class="hero-tag">
-        <span class="mono">CS @ UT Austin</span>
-        <span class="divider">·</span>
-        <span class="mono">Software Engineer</span>
-      </div>
-      <h1 class="hero-title">
-        <span class="line">Trisha</span>
-        <span class="line accent-line">Darure<span class="pink-dot">.</span></span>
-      </h1>
-      <p class="hero-sub">Web Developer · Game Developer · Builder of things that make people feel something.</p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary">View Work</a>
-        <a href="#contact" class="btn-ghost">Get in Touch</a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span class="mono">scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-    <div class="hero-deco-number mono">2025</div>
-  </section>
+  <!-- Hero -->
+  <header id="hero">
+    <h1>Trisha Darure</h1>
+    <p>Web/Game Developer • Software Engineer</p>
+    <a href="#projects" class="btn">See My Work</a>
+  </header>
 
-  <!-- ABOUT -->
+  <!-- About -->
   <section id="about">
-    <div class="about-inner">
-      <div class="section-label"><span class="mono pink">01 /</span> About</div>
-      <div class="about-grid">
-        <div class="about-headline">
-          <h2>Turning ideas into <em>experiences.</em></h2>
-        </div>
-        <div class="about-body">
-          <p>
-            I'm a student developer at the <strong>University of Texas at Austin</strong> pursuing a BS in Computer
-            Science. I build interactive web apps, games, and AI-powered projects — always with a focus on creativity,
-            usability, and clean design.
-          </p>
-          <p>
-            Whether it's a real-time betting intelligence agent or a game where you make roti for hungry customers, I
-            care deeply about the craft of building software that people actually want to use.
-          </p>
-          <div class="skills-row">
-            <div class="skill-group">
-              <p class="skill-label mono">Languages</p>
-              <p>Python · JavaScript · TypeScript · GDScript · HTML · CSS</p>
-            </div>
-            <div class="skill-group">
-              <p class="skill-label mono">Frameworks & Tools</p>
-              <p>React · Node.js · Flask · Godot · Firebase · Tailwind · Cloudflare</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m a student developer pursuing a BS in Computer Science at the University of Texas at Austin,
+        with a passion for building interactive web apps, games, and AI-powered projects focused on
+        creativity, usability, and clean design.
+      </p>
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- Projects -->
   <section id="projects">
-    <div class="projects-inner">
-      <div class="section-label"><span class="mono pink">02 /</span> Projects</div>
 
-      <h2 class="projects-section-heading">Technical Projects</h2>
+    <h2 class="project-section-title">Technical Projects</h2>
+    <div class="project-card">
+      <iframe src="https://sports-oracle-pied.vercel.app/" class="project-live"></iframe>
+      <div class="project-info">
+        <h3>Sports Oracle</h3>
+        <p>AI-powered sports betting intelligence agent that analyzes live injury reports, line movement, sharp money
+          indicators, and breaking news to generate real-time bet signals.</p>
+        <p class="project-tech">Claude AI • React • Node.js • Clerk Auth • Fly.io • Vercel • Tailwind CSS</p>
+        <a class="demo-btn" href="https://sports-oracle-pied.vercel.app/" target="_blank">
+          Open Live Demo →
+        </a>
+      </div>
+      <a href="https://github.com/trishadar/sports-oracle" target="_blank" class="github-btn"
+        aria-label="View GitHub repository">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
 
-      <!-- FEATURED: Sports Oracle -->
-      <div class="project-featured reveal">
-        <div class="project-embed-wrap featured-embed">
-          <div class="embed-bar">
-            <span class="embed-dot red"></span>
-            <span class="embed-dot yellow"></span>
-            <span class="embed-dot green"></span>
-            <span class="embed-url mono">sports-oracle-pied.vercel.app</span>
-          </div>
-          <iframe src="https://sports-oracle-pied.vercel.app/" loading="lazy" title="Sports Oracle"></iframe>
-        </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <iframe src="https://cf-ai-internet-wrapped.pages.dev/" class="project-live"></iframe>
         <div class="project-info">
-          <span class="project-number mono">001</span>
-          <h3>Sports Oracle</h3>
-          <p>AI-powered sports betting intelligence agent that analyzes live injury reports, line movement, sharp money
-            indicators, and breaking news to generate real-time bet signals.</p>
-          <div class="tech-tags">
-            <span>Claude AI</span><span>React</span><span>Node.js</span><span>Clerk
-              Auth</span><span>Fly.io</span><span>Vercel</span><span>Tailwind CSS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://sports-oracle-pied.vercel.app/" target="_blank" class="btn-primary small">Live Demo →</a>
-            <a href="https://github.com/trishadar/sports-oracle" target="_blank" class="btn-ghost small">GitHub</a>
-          </div>
+          <h3>Internet Wrapped</h3>
+          <p>AI-powered Internet traffic trends by country, delivered in a chatbot experience.</p>
+          <p class="project-tech">Cloudflare Workers • Cloudflare Pages • Cloudflare Radar API • Workers AI • Durable
+            Objects • TypeScript • Wrangler CLI • HTML • CSS • JavaScript</p>
+          <a class="demo-btn" href="https://cf-ai-internet-wrapped.pages.dev/" target="_blank">
+            Open Live Demo →
+          </a>
         </div>
+        <a href="https://github.com/trishadar/cf_ai_internet_wrapped" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
 
-      <!-- Internet Wrapped + Stock Sentiment -->
-      <div class="project-duo">
-        <div class="project-card reveal">
-          <div class="project-embed-wrap">
-            <div class="embed-bar">
-              <span class="embed-dot red"></span>
-              <span class="embed-dot yellow"></span>
-              <span class="embed-dot green"></span>
-              <span class="embed-url mono">cf-ai-internet-wrapped.pages.dev</span>
-            </div>
-            <iframe src="https://cf-ai-internet-wrapped.pages.dev/" loading="lazy" title="Internet Wrapped"></iframe>
-          </div>
-          <div class="project-info">
-            <span class="project-number mono">002</span>
-            <h3>Internet Wrapped</h3>
-            <p>AI-powered internet traffic trends by country, delivered in an interactive chatbot experience.</p>
-            <div class="tech-tags">
-              <span>Cloudflare Workers</span><span>Workers AI</span><span>TypeScript</span><span>Durable Objects</span>
-            </div>
-            <div class="project-links">
-              <a href="https://cf-ai-internet-wrapped.pages.dev/" target="_blank" class="btn-primary small">Live Demo
-                →</a>
-              <a href="https://github.com/trishadar/cf_ai_internet_wrapped" target="_blank"
-                class="btn-ghost small">GitHub</a>
-            </div>
-          </div>
+      <div class="project-card">
+        <iframe src="https://trishadar.github.io/stock-sentiment-predictor/" class="project-live"></iframe>
+        <div class="project-info">
+          <h3>Stock Sentiment Predictor</h3>
+          <p>Predict stock sentiment from news headlines and get Buy/Hold/Sell suggestions.</p>
+          <p class="project-tech">Python • Flask • NewsAPI • VADER Sentiment • Requests • Flask-CORS • HTML • CSS •
+            JavaScript</p>
+          <a class="demo-btn" href="https://trishadar.github.io/stock-sentiment-predictor/" target="_blank">
+            Open Live Demo →
+          </a>
         </div>
-
-        <div class="project-card reveal">
-          <div class="project-embed-wrap">
-            <div class="embed-bar">
-              <span class="embed-dot red"></span>
-              <span class="embed-dot yellow"></span>
-              <span class="embed-dot green"></span>
-              <span class="embed-url mono">trishadar.github.io/stock-sentiment-predictor</span>
-            </div>
-            <iframe src="https://trishadar.github.io/stock-sentiment-predictor/" loading="lazy"
-              title="Stock Sentiment Predictor"></iframe>
-          </div>
-          <div class="project-info">
-            <span class="project-number mono">003</span>
-            <h3>Stock Sentiment Predictor</h3>
-            <p>Predict stock sentiment from news headlines and receive Buy / Hold / Sell suggestions.</p>
-            <div class="tech-tags">
-              <span>Python</span><span>Flask</span><span>NewsAPI</span><span>VADER</span><span>Flask-CORS</span>
-            </div>
-            <div class="project-links">
-              <a href="https://trishadar.github.io/stock-sentiment-predictor/" target="_blank"
-                class="btn-primary small">Live Demo →</a>
-              <a href="https://github.com/trishadar/stock-sentiment-predictor" target="_blank"
-                class="btn-ghost small">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CREATIVE WEB EXPERIMENTS -->
-      <h2 class="projects-section-heading">Creative Web Experiments</h2>
-
-      <div class="project-duo">
-        <div class="project-card reveal">
-          <div class="project-embed-wrap">
-            <div class="embed-bar">
-              <span class="embed-dot red"></span>
-              <span class="embed-dot yellow"></span>
-              <span class="embed-dot green"></span>
-              <span class="embed-url mono">trishadar.github.io/TheCardsKnow</span>
-            </div>
-            <iframe src="https://trishadar.github.io/TheCardsKnow/" loading="lazy" title="The Cards Know"></iframe>
-          </div>
-          <div class="project-info">
-            <span class="project-number mono">004</span>
-            <h3>The Cards Know</h3>
-            <p>A mind-reading web game inspired by Peter Answers — ask carefully, the cards are listening.</p>
-            <div class="tech-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="https://trishadar.github.io/TheCardsKnow/" target="_blank" class="btn-primary small">Live Demo
-                →</a>
-              <a href="https://github.com/trishadar/TheCardsKnow" target="_blank" class="btn-ghost small">GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-embed-wrap">
-            <div class="embed-bar">
-              <span class="embed-dot red"></span>
-              <span class="embed-dot yellow"></span>
-              <span class="embed-dot green"></span>
-              <span class="embed-url mono">trishadar.github.io/MemoryMap</span>
-            </div>
-            <iframe src="https://trishadar.github.io/MemoryMap/" loading="lazy" title="Memory Map"></iframe>
-          </div>
-          <div class="project-info">
-            <span class="project-number mono">005</span>
-            <h3>Memory Map</h3>
-            <p>An interactive map for my mom to add photos — a digital scrapbook pinned to real places.</p>
-            <div class="tech-tags">
-              <span>Leaflet.js</span><span>Firebase</span><span>OpenStreetMap</span><span>Nominatim API</span>
-            </div>
-            <div class="project-links">
-              <a href="https://trishadar.github.io/MemoryMap/" target="_blank" class="btn-primary small">Live Demo →</a>
-              <a href="https://github.com/trishadar/MemoryMap" target="_blank" class="btn-ghost small">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PLAYABLE GAMES -->
-      <h2 class="projects-section-heading">Playable Games</h2>
-      <div class="project-duo">
-        <div class="project-card game-card reveal">
-          <div class="game-preview">
-            <video autoplay muted loop playsinline>
-              <source src="videos/BasketballDemo.mov" type="video/mp4">
-            </video>
-            <div class="game-overlay">
-              <span class="game-tag mono">Godot 4.4.1 · GDScript</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <span class="project-number mono">006</span>
-            <h3>Basketball Stars Parody</h3>
-            <p>A 2D basketball game where you compete against a friend. Download and play locally.</p>
-            <div class="tech-tags">
-              <span>Godot 4.4.1</span><span>GDScript</span>
-            </div>
-            <div class="project-links">
-              <a href="downloads/BasketballStarsWindows.zip" class="btn-primary small">Windows</a>
-              <a href="downloads/BasketballStarsMac.zip" class="btn-primary small">Mac</a>
-              <a href="downloads/BasketballStarsLinux.zip" class="btn-primary small">Linux</a>
-              <a href="https://github.com/trishadar/BasketballStars" target="_blank" class="btn-ghost small">GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card game-card reveal">
-          <div class="game-preview">
-            <video autoplay muted loop playsinline>
-              <source src="videos/PapasRotiriaDemo.mov" type="video/mp4">
-            </video>
-            <div class="game-overlay">
-              <span class="game-tag mono">Godot 4.4.1 · GDScript</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <span class="project-number mono">007</span>
-            <h3>Papa's Rotiria</h3>
-            <p>Make roti orders for hungry customers in this fun parody of Papa's Pizzeria. Download and play.</p>
-            <div class="tech-tags">
-              <span>Godot 4.4.1</span><span>GDScript</span>
-            </div>
-            <div class="project-links">
-              <a href="downloads/PapasRotiriaWindows.zip" class="btn-primary small">Windows</a>
-              <a href="downloads/PapasRotiriaMac.zip" class="btn-primary small">Mac</a>
-              <a href="downloads/PapasRotiriaLinux.zip" class="btn-primary small">Linux</a>
-              <a href="https://github.com/trishadar/PapasRotiria" target="_blank" class="btn-ghost small">GitHub</a>
-            </div>
-          </div>
-        </div>
+        <a href="https://github.com/trishadar/stock-sentiment-predictor" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
 
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact-inner">
-      <div class="section-label"><span class="mono pink">03 /</span> Contact</div>
-      <div class="contact-grid">
-        <div class="contact-headline">
-          <h2>Let's build something <em>together.</em></h2>
-          <p class="contact-sub">I'm open to internships, collaborations, and interesting projects. Reach out — I'd love
-            to chat.</p>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:tpd568@my.utexas.edu" class="contact-item">
-            <span class="contact-icon">✉</span>
-            <div>
-              <p class="mono small-label">Email</p>
-              <p>tpd568@my.utexas.edu</p>
-            </div>
-          </a>
-          <a href="https://github.com/trishadar" target="_blank" class="contact-item">
-            <span class="contact-icon">⌥</span>
-            <div>
-              <p class="mono small-label">GitHub</p>
-              <p>github.com/trishadar</p>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/trisha-darure/" target="_blank" class="contact-item">
-            <span class="contact-icon">◈</span>
-            <div>
-              <p class="mono small-label">LinkedIn</p>
-              <p>linkedin.com/in/trisha-darure</p>
-            </div>
+    <h2 class="project-section-title">Creative Web Experiments</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <iframe src="https://trishadar.github.io/TheCardsKnow/" class="project-live"></iframe>
+        <div class="project-info">
+          <h3>The Cards Know</h3>
+          <p>A mind-reading web game inspired by Peter Answers—ask carefully!</p>
+          <p class="project-tech">HTML • CSS • JavaScript</p>
+          <a class="demo-btn" href="https://trishadar.github.io/TheCardsKnow/" target="_blank">
+            Open Live Demo →
           </a>
         </div>
+        <a href="https://github.com/trishadar/TheCardsKnow" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <iframe src="https://trishadar.github.io/MemoryMap/" class="project-live"></iframe>
+        <div class="project-info">
+          <h3>Memory Map</h3>
+          <p>Map for my mom to add photos; a fun way to relive our memories.</p>
+          <p class="project-tech">Leaflet.js • Firebase Authentication • Firebase Firestore • OpenStreetMap • Nominatim
+            API • HTML • CSS • JavaScript</p>
+          <a class="demo-btn" href="https://trishadar.github.io/MemoryMap/" target="_blank">
+            Open Live Demo →
+          </a>
+        </div>
+        <a href="https://github.com/trishadar/MemoryMap" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <h2 class="project-section-title">Playable Games</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <video class="project-video" autoplay muted loop playsinline>
+          <source src="videos/BasketballDemo.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="project-info">
+          <h3>Basketball Stars Parody</h3>
+          <p>A 2D basketball game where you compete against friends. Download and play.</p>
+          <p class="project-tech">Godot 4.4.1 • GDScript</p>
+        </div>
+        <div class="download-buttons">
+          <a href="downloads/BasketballStarsWindows.zip" class="btn">Windows</a>
+          <a href="downloads/BasketballStarsMac.zip" class="btn">Mac</a>
+          <a href="downloads/BasketballStarsLinux.zip" class="btn">Linux</a>
+        </div>
+        <a href="https://github.com/trishadar/BasketballStars" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <video class="project-video" autoplay muted loop playsinline>
+          <source src="videos/PapasRotiriaDemo.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="project-info">
+          <h3>Papa's Rotiria</h3>
+          <p>Make roti orders for hungry customers in this fun parody of Papa’s Pizzeria. Download and play.</p>
+          <p class="project-tech">Godot 4.4.1 • GDScript</p>
+        </div>
+        <div class="download-buttons">
+          <a href="downloads/PapasRotiriaWindows.zip" class="btn">Windows</a>
+          <a href="downloads/PapasRotiriaMac.zip" class="btn">Mac</a>
+          <a href="downloads/PapasRotiriaLinux.zip" class="btn">Linux</a>
+        </div>
+        <a href="https://github.com/trishadar/PapasRotiria" target="_blank" class="github-btn"
+          aria-label="View GitHub repository">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
     </div>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:tpd568@my.utexas.edu">tpd568@my.utexas.edu</a></p>
+        <p>GitHub: <a href="https://github.com/trishadar" target="_blank">
+            https://github.com/trishadar</a></p>
+      </div>
+    </section>
+
     <footer>
-      <p class="mono">© 2025 Trisha Darure</p>
-      <p class="mono">Built with HTML · CSS · JS</p>
+      <p>&copy; 2025 Trisha Darure</p>
     </footer>
-  </section>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
