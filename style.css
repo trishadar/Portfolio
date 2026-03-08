@@ -56,6 +56,10 @@ nav a {
   color: black;
 }
 
+body.dark .logo {
+  color: white;
+}
+
 /* Hero */
 header {
   padding: 120px 20px;
